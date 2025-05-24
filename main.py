@@ -10,7 +10,7 @@ Usage:
 
 Edit the CAMERA_URL and YOUTUBE_KEY variables below before running.
 
-Author: gdeckard
+Author: gmdeckard
 Last Updated: 2025
 """
 

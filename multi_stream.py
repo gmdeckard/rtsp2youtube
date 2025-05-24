@@ -45,7 +45,7 @@ logger = logging.getLogger("MultiStream")
 CAMERA_CONFIG = [
     {
         "name": "Front Door",
-        "rtsp_url": "rtsp://username:password@192.168.0.191:554/stream1",
+        "rtsp_url": "rtsp://username:password@camera-ip:554/stream1",
         "youtube_key": "your-stream-key-here",
         # Optional quality settings - if not specified, defaults will be used
         "quality": {
