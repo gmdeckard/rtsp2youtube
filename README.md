@@ -2,11 +2,12 @@
 
 Simple scripts to stream video from a TP-Link Tapo C121 camera to YouTube Live.
 
-This repository contains three different approaches:
+This repository contains four different approaches:
 
 1. **Single Camera Stream** - Stream one camera to YouTube Live (`main.py`)
 2. **Multiple Camera Streams** - Stream multiple cameras simultaneously (`multi_stream.py`)
-3. **Streamlink Method** - Alternative method using Streamlink (`streamlink_version.py`)
+3. **Combined Camera Stream** - Combine multiple cameras into one stream (`combined_stream.py`)
+4. **Streamlink Method** - Alternative method using Streamlink (`streamlink_version.py`)
 
 ## Option 1: Direct RTSP Streaming (Recommended)
 
@@ -50,7 +51,32 @@ The `multi_stream.py` script allows you to stream multiple cameras to multiple Y
    python multi_stream.py
    ```
 
-## Option 3: Streamlink Method (Alternative)
+## Option 3: Combined Camera Stream
+
+The `combined_stream.py` script allows you to combine multiple camera feeds into a single YouTube Live stream with different layout options.
+
+### Usage
+
+1. Edit `combined_stream.py` and update:
+   - `CAMERA_CONFIG` list with your camera information
+   - `YOUTUBE_KEY` with your YouTube Stream Key
+   - `LAYOUT` with your preferred layout ("side-by-side", "grid", or "switch")
+
+2. Run the script:
+   ```bash
+   python combined_stream.py
+   ```
+
+3. Command line options:
+   ```bash
+   # To change layout at runtime:
+   python combined_stream.py --layout grid
+   
+   # To use switching mode with custom interval (10 seconds):
+   python combined_stream.py --layout switch --switch-interval 10
+   ```
+
+## Option 4: Streamlink Method (Alternative)
 
 The `streamlink_version.py` script uses Streamlink and FFmpeg as an alternative method, which might work better in some scenarios.
 
