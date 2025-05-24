@@ -11,7 +11,7 @@ Usage:
 
 Edit the CAMERA_CONFIG list below before running.
 
-Author: gdeckard
+Author: gmdeckard
 Last Updated: 2025-05-24
 """
 
@@ -45,8 +45,8 @@ logger = logging.getLogger("MultiStream")
 CAMERA_CONFIG = [
     {
         "name": "Front Door",
-        "rtsp_url": "rtsp://tapoadmin:chickens@192.168.0.191:554/stream1",
-        "youtube_key": "d5ba-jkgr-bdpr-uupp-6b5w",
+        "rtsp_url": "rtsp://username:password@192.168.0.191:554/stream1",
+        "youtube_key": "your-stream-key-here",
         # Optional quality settings - if not specified, defaults will be used
         "quality": {
             "resolution": "1280x720",

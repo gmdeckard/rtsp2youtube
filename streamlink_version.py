@@ -10,7 +10,7 @@ Usage:
 
 Edit the CAMERA_URL and YOUTUBE_KEY variables below before running.
 
-Author: gdeckard
+Author: gmdeckard
 Last Updated: 2025
 """
 
@@ -22,7 +22,7 @@ import subprocess
 
 # ========== EDIT THESE VALUES ==========
 # Your camera's URL or IP address
-CAMERA_URL = "http://192.168.0.191/"     # Web interface URL
+CAMERA_URL = "http://camera-ip/"     # Web interface URL
 
 # Your camera login credentials
 CAMERA_USER = "username"
@@ -81,7 +81,7 @@ def start_stream():
          f'-pix_fmt yuv420p -c:a aac -b:a 128k -f flv "{YOUTUBE_URL}"'),
         f"{CAMERA_URL}",
         "best",
-        "--http-header", "Referer=http://192.168.0.191/",
+        "--http-header", "Referer= "{CAMERA_URL}"",
         "--http-header", f"Authorization=Basic {CAMERA_USER}:{CAMERA_PASS}"
     ]
     

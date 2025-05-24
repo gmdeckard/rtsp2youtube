@@ -22,10 +22,10 @@ import subprocess
 
 # ========== EDIT THESE VALUES ==========
 # Your camera's RTSP URL (default for TP-Link Tapo C121)
-CAMERA_URL = "rtsp://tapoadmin:chickens@192.168.0.191:554/stream1"
+CAMERA_URL = "rtsp://username:password@camera-ip:554/stream1"
 
 # Your YouTube Stream Key from YouTube Studio -> Go Live -> Stream
-YOUTUBE_KEY = "d5ba-jkgr-bdpr-uupp-6b5w"
+YOUTUBE_KEY = "your-stream-key-here"
 
 # YouTube RTMP URL (don't change unless YouTube changes their endpoint)
 YOUTUBE_URL = f"rtmp://a.rtmp.youtube.com/live2/{YOUTUBE_KEY}"

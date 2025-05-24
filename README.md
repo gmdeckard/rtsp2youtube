@@ -83,7 +83,7 @@ The `streamlink_version.py` script uses Streamlink and FFmpeg as an alternative 
 
 Typical RTSP URL format for TP-Link Tapo C121 cameras:
 ```
-rtsp://username:password@192.168.0.191:554/stream1
+rtsp://username:password@camera-ip/stream1
 ```
 
 ## YouTube Stream Key
