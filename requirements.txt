@@ -1,0 +1,3 @@
+# filepath: /home/gdeckard/Documents/video_stream/rtsp_to_youtube/requirements.txt
+# No external Python libraries are required for this script.
+# However, ffmpeg must be installed on the system.
